@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Const</title>
+        <script src="main.js"></script>
+
+        <div id="demo">
+            <h1>Wich const you cant: </h1>
+            <p>Reassign a constant value</p>
+            <p>Reassign a constant array</p>
+            <p>Reassind a constant object</p>
+        </div>
+
+        <div id="demo2">
+            <h1>"Changing" a const value</h1>
+            <p>For change a value is needed create a new variable</p>
+            <p id="number">Com números </p>
+            <br>
+            <p>Usando Objeto/String é possivel alterar a propriedade</p>
+            <p id="string">Com String</p>
+            <script>
+
+                const elementNumber = document.getElementById("number");
+                const elementString = document.getElementById("string")
+
+                //Numbers
+
+                const x = 5;
+                const newValue = x + 23;
+                
+                const y = 7;
+                let newValue02 = y + 13;
+
+                //Strings
+
+                const person = {name: "Guilhermo", age: "33 old"}
+                person.name = "Roger";
+                person.age = "45 old";
+
+
+                elementNumber.innerHTML =  x + " " +  y + " " + newValue + " " + y + " " + newValue02;
+
+                elementString.innerHTML = person.name + " " + person.age;
+
+                
+
+            </script>
+        </div>
+
+    </head>
+    <body>
+
+    </body>
+</html>
